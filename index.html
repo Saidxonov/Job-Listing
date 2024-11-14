@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Job Listing</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <img class="header-image" src="./header-image.svg" alt="" />
+    <div class="container">
+      <div class="form">
+        <form id="form">
+          <div class="form-title">
+            <h1>Vaknsiya ma'lumotlarini kiriting</h1>
+          </div>
+          <div class="inputs">
+            <div class="img-url">
+              <h2>Logotip URL</h2>
+              <input
+                id="input-img-url"
+                type="url"
+                placeholder="Logotip URL manzilini kiriting"
+              />
+            </div>
+            <div class="input-company img-url">
+              <h2>Kompaniya nomi</h2>
+              <input id="input-company-name" type="text" placeholder="Manage" />
+            </div>
+            <div class="chekboxes">
+              <div class="first-chekbox">
+                <input id="input-new-chekbox" type="checkbox" />
+                <p>New</p>
+              </div>
+              <div class="first-chekbox">
+                <input id="input-feature-chekbox" type="checkbox" />
+                <p>Featured</p>
+              </div>
+            </div>
+            <div class="users-position">
+              <h2>Lavozim</h2>
+              <input
+                id="input-posotion-user"
+                type="text"
+                placeholder="Fullstak Developer"
+              />
+            </div>
+            <div class="selects">
+              <div class="time">
+                <h2>Vaqt</h2>
+                <select id="vaqt">
+                  <option value="tanlang">Tanlang</option>
+                  <option id="time-1" value="1d">1d</option>
+                  <option id="time-2" value="2d">2d</option>
+                  <option id="time-3" value="3d">3d</option>
+                  <option id="time-4" value="4d">4d</option>
+                  <option id="time-5" value="5d">5d</option>
+                  <option id="time-6" value="6d">6d</option>
+                </select>
+              </div>
+              <div class="time">
+                <h2>Ish turi</h2>
+                <select id="type-of-work">
+                  <option value="tanlang">Tanlang</option>
+                  <option id="work-type-frontend" value="Contract">
+                    Contract
+                  </option>
+                  <option id="work-type-frontend" value="Part Time">
+                    Part Time
+                  </option>
+                  <option id="work-type-frontend" value="Full Time">
+                    Full Time
+                  </option>
+                </select>
+              </div>
+              <div class="time">
+                <h2>Joylashuv</h2>
+                <select id="location">
+                  <option value="tanlang">Tanlang</option>
+                  <option id="location-uk" value="UK">USA only</option>
+                  <option id="location-usa" value="USA">Worldwide</option>
+                  <option id="location-uzb" value="uzbakistan">UK only</option>
+                </select>
+              </div>
+            </div>
+            <div class="skills">
+              <div class="skil-title">
+                <h2>Ko'nikmalar</h2>
+              </div>
+              <div class="skils-type">
+                <div class="first-row">
+                  <div class="fulstak">
+                    <input id="fulstak-skil" type="checkbox" />
+                    <h3>Fullstak</h3>
+                  </div>
+                  <div class="fulstak">
+                    <input id="python-skil" type="checkbox" />
+                    <h3>Python</h3>
+                  </div>
+                </div>
+                <div class="second-row">
+                  <div class="fulstak">
+                    <input id="midweight-skil" type="checkbox" />
+                    <h3>Midweight</h3>
+                  </div>
+                  <div class="fulstak">
+                    <input id="react-skil" type="checkbox" />
+                    <h3>React</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="btn">Saqlash</button>
+        </form>
+      </div>
+      <div id="block"></div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

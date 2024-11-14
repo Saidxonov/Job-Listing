@@ -1,0 +1,326 @@
+@import "./font.css";
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.header-image {
+  width: 100%;
+  position: fixed;
+  top: -50px;
+}
+
+.form {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-top: 150px;
+  padding: 30px;
+}
+
+.form-title h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.img-url h2,
+.users-position h2,
+.time h2,
+.skills h2 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+#input-img-url,
+#input-company-name,
+#input-posotion-user {
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin-left: 10px;
+  font-size: large;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+::placeholder {
+  color: grey;
+  padding-left: 10px;
+}
+
+.chekboxes {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 10px;
+  column-gap: 20px;
+}
+
+#input-new-chekbox,
+#input-feature-chekbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#fulstak-skil,
+#python-skil,
+#react-skil,
+#midweight-skil {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.first-chekbox {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+}
+
+.first-chekbox p {
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+#vaqt,
+#location,
+#type-of-work {
+  padding: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.selects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fulstak h3 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.fulstak {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  margin-top: 10px;
+}
+
+.first-row {
+  margin-left: 10px;
+}
+
+.skils-type {
+  display: flex;
+  align-items: center;
+  column-gap: 90px;
+}
+
+#btn {
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  transition: 0.3s;
+}
+
+.user-img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.card {
+  width: 100%;
+  height: 152px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  -webkit-box-shadow: 0px 2px 15px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 15px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 15px -2px rgba(0, 0, 0, 0.75);
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.user-company h2 {
+  font-family: "League Spartan";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-left: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.user-company h2:hover {
+  color: #5ca5a5;
+}
+
+#vaqt,
+#location,
+#type-of-work {
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#block {
+  background-color: #effafa;
+  margin-top: 50px;
+}
+
+.user-time-location {
+  display: flex;
+  align-items: center;
+  column-gap: 41px;
+}
+
+.day,
+.type-of-work,
+.location {
+  font-family: "League Spartan";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.13846154510974884px;
+  padding-top: 7px;
+  color: #7c8f8f;
+}
+
+.user-company-name {
+  color: #5ca5a5;
+  font-family: "League Spartan";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.56px;
+  padding-left: 24px;
+  padding-bottom: 14px;
+  transition: 0.3s;
+}
+
+#user-new {
+  font-family: "League Spartan";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  padding: 7px 8px 3px 8px;
+  background-color: #5ca5a5;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.user-new-featured {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding-bottom: 10px;
+}
+
+.user-info-top {
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.user-company {
+  margin-left: 12px;
+}
+
+#user-featured {
+  font-family: "League Spartan";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  padding: 7px 9px 3px 8px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.user-skills {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.user-skil-frontend {
+  font-family: "League Spartan";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #5ca5a5;
+  padding: 5px 10px 3px 9px;
+  background-color: #eff6f6;
+  border-radius: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.user-skil-frontend:hover {
+  color: #fff;
+  background-color: #5ca5a5;
+  transition: 0.3s;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  column-gap: 256px;
+}
+
+.user-company-name h2:hover {
+  color: #5ca5a5;
+  transition: 0.3s;
+}
+
+.delete-btn {
+  padding: 15px 15px;
+  border-radius: 12px;
+  border: none;
+  margin-top: 90px;
+  color: #fff;
+  background-color: #5ca5a5;
+  transition: 0.3s;
+  cursor: pointer;
+  font-family: "League Spartan";
+  font-weight: 700;
+  margin-left: 100px;
+}
+
+.delete-btn:hover {
+  background-color: #eff6f6;
+  color: #5ca5a5;
+  transition: 0.3s;
+}
