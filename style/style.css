@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #effafa;
+}
+
 .container {
   max-width: 1220px;
   margin: 0 auto;
@@ -26,6 +30,7 @@
   border-radius: 10px;
   margin-top: 150px;
   padding: 30px;
+  backdrop-filter: blur(15px);
 }
 
 .form-title h1 {
@@ -57,6 +62,7 @@
   font-size: large;
   padding-left: 10px;
   margin-top: 10px;
+  backdrop-filter: blur(15px);
 }
 
 ::placeholder {
@@ -166,9 +172,7 @@
   border-radius: 5px;
   display: flex;
   align-items: center;
-  -webkit-box-shadow: 0px 2px 15px -2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 2px 15px -2px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 2px 15px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 15px 20px -5px #0d718226;
   margin-bottom: 50px;
   padding: 10px;
 }
@@ -196,7 +200,6 @@
 }
 
 #block {
-  background-color: #effafa;
   margin-top: 50px;
 }
 
