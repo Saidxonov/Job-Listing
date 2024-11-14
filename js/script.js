@@ -15,6 +15,11 @@ const button = document.querySelector("#btn");
 const block = document.querySelector("#block");
 const form = document.querySelector("#form");
 
+// JavaScript to hide loader by adding the hidden class after 3 seconds
+setTimeout(() => {
+  document.getElementById("loader-card").classList.add("hidden");
+}, 4020);
+
 function saveCardToLocalStorage(data) {
   const cards = JSON.parse(localStorage.getItem("jobCards")) || [];
   cards.push(data);
